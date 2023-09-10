@@ -3,28 +3,29 @@
 export const Cards = () => {
     return (
         <>
+            <div className='container'>
         <div className="card">
-           
-            <img src={require('../react.png')} style={{ width: '100%' }}></img>
+
+            <img src={require('../react.png')} ></img>
             <div className="container1">
                 <h4> React </h4>
                 <p> info about React</p>
-            </div>
-        </div>
- <div className="card">
+                    </div>
+                    </div>
+            <div className="card">
+                
+                <img src={require('../javaScript.png')}></img>
+                
            
-            <img src={require('../javaScript.png')} style={{ width: '100%' }}></img>
-            <div className="container1">
-                <h4> React </h4>
-                <p> info about React</p>
+        <div className="container1"> 
+                <h4> javaScript</h4>
+                <p> info about Java javaScript</p>
             </div>
         </div>
 
-
+</div>
         
-        
-</>        
-    )
-
+                </>
+                )
 
 }
