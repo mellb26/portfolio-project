@@ -228,7 +228,7 @@ footer {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
 /* Add some padding inside the card container */
 .container1 {
@@ -239,7 +239,20 @@ footer {
 }
 
 img {
-    border-radius: 7px 7px 0 0;
-
+border-radius: 7px 7px 0 0;
+width: 101%;
+height: 70%;
    
+}
+.home-p1 {
+position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background: black no-repeat;
+    background-size: 100% 100%;
+    padding: 50px;
+    border-radius: 10px;
 }

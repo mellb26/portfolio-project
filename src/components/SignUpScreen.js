@@ -5,7 +5,7 @@ import {
 
 } from "firebase/auth";
 import { useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+// import { Routes, Route, useNavigate } from "react-router-dom";
 
 export const SignUpScreen = () => {
     const [email, setEmail] = useState('')

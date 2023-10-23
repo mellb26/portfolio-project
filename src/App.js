@@ -2,7 +2,7 @@ import { Auth } from "./components/Auth";
 import { SignUpScreen } from "./components/SignUpScreen";
 import { Home } from "./components/Home";
 import "./App.css";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { Cards } from './components/Cards'
 import { Footer } from "./components/Footer";

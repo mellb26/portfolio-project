@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { LoremIpsum } from "react-lorem-ipsum";
 export const NavBar = () => {
   return (
     <>

@@ -1,4 +1,5 @@
 import { auth, db} from "../config/firebase-config";
+
 import "../App.css";
 import {
   createUserWithEmailAndPassword,
@@ -14,8 +15,9 @@ import {
 } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 
+
 export const Auth = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -33,7 +35,8 @@ export const Auth = () => {
         })
           .then(() => {
             console.log('User added to Firestore');
-            return db.collection('users').doc(uid).get();
+        navigate("/home")
+            // return db.collection('users').doc(uid).get();
           })
           .catch((error) => {
             console.log('Something went wrong with adding user to Firestore or retrieving data:', error);
@@ -46,6 +49,7 @@ export const Auth = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
+  navigate("/home");
       return(user)
       })
       .catch((error) => {
@@ -59,7 +63,6 @@ export const Auth = () => {
       console.error(err);
     }
   };
-  
     const navToHome = () => {
       navigate("/Home");
   
